@@ -38,6 +38,5 @@ function floyd_steinberg(image, callback) {
     imageData[currentPixel + 1] = imageData[currentPixel + 2] = imageData[currentPixel];
   }
 
-  error = null;
-  callback(error, image);
+  return image;
 }

@@ -3,15 +3,13 @@ var pngparse = require('pngparse');
 var fs = require('fs');
 var PNG = require('pngjs').PNG;
 
-fs.createReadStream(__dirname + '/icecream.png')
+fs.createReadStream(__dirname + '/cats.png')
     .pipe(new PNG({
         filterType: 4
     }))
     .on('parsed', function() {
       var image = this;
-      floydSteinberg(this, function(err, image) {
-        console.log('floyd done');
-    });
+      floydSteinberg(this);
        this.pack().pipe(fs.createWriteStream(__dirname + '/mono.png'));
     });
 
