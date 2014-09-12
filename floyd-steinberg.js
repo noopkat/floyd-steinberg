@@ -3,9 +3,11 @@ Floyd-Steinberg implementation thanks to Forrest Oliphant @forresto and @meemo v
 */
 module.exports = floyd_steinberg;
 
-function floyd_steinberg(imageData, callback) {
+function floyd_steinberg(image, callback) {
+  var imageData = image.data;
   var imageDataLength = imageData.length;
-  var lumR = [];
+  var w = image.width;
+  var lumR = [],
       lumG = [],
       lumB = [],
       error;
@@ -37,5 +39,5 @@ function floyd_steinberg(imageData, callback) {
   }
 
   error = null;
-  callback(error, imageData);
+  callback(error, image);
 }
