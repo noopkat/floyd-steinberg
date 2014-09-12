@@ -1,0 +1,27 @@
+{
+  "name": "floyd-steinberg",
+  "version": "0.0.0",
+  "description": "Dithers an image using the Floyd-Steinberg algorithm",
+  "main": "floyd-steinberg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noopkat/floyd-steinberg.git"
+  },
+  "keywords": [
+    "floyd-steinberg",
+    "dither",
+    "dithering",
+    "image",
+    "optimisation",
+    "optimization"
+  ],
+  "author": "Suz Hinton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noopkat/floyd-steinberg/issues"
+  },
+  "homepage": "https://github.com/noopkat/floyd-steinberg"
+}
