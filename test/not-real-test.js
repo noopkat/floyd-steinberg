@@ -3,6 +3,7 @@ var pngparse = require('pngparse');
 var fs = require('fs');
 var PNG = require('pngjs').PNG;
 
+// piping to file test
 fs.createReadStream(__dirname + '/cats.png')
     .pipe(new PNG({
         filterType: 4
@@ -13,16 +14,14 @@ fs.createReadStream(__dirname + '/cats.png')
        this.pack().pipe(fs.createWriteStream(__dirname + '/mono.png'));
     });
 
+// passing imagedata obj to var for lcd use test
+// var monoimage;  
 // pngparse.parseFile(__dirname + '/icecream.png', function(err, image) {
 //   if (err) {
 //       return cb(err);
 //     }
 
-//     floydSteinberg(image, function(err, monoimage) {
-//         for (i=0; i < monoimage.data.length; i++) {
-//           console.log(monoimage.data[i]);
-//         }
-//        
-//     });
+//     monoimage = floydSteinberg(image);
+//     console.log(monoimage);
 
 // });
