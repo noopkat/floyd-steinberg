@@ -3,7 +3,7 @@ Floyd-Steinberg implementation thanks to Forrest Oliphant @forresto and @meemo v
 */
 module.exports = floyd_steinberg;
 
-function floyd_steinberg(image, callback) {
+function floyd_steinberg(image) {
   var imageData = image.data;
   var imageDataLength = imageData.length;
   var w = image.width;

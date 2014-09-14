@@ -4,7 +4,7 @@ var fs = require('fs');
 var PNG = require('pngjs').PNG;
 
 // piping to file test
-fs.createReadStream(__dirname + '/cats.png')
+fs.createReadStream(__dirname + '/icecream.png')
     .pipe(new PNG({
         filterType: 4
     }))
