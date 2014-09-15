@@ -9,7 +9,6 @@ test('should return expected image object', function(t) {
     t.equal(typeof testDither.height, 'number');
     t.equal(typeof testDither.data, 'object');
 
-    console.log(testDither);
     t.end();
   });
 });
