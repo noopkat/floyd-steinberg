@@ -1,6 +1,17 @@
 /*
-Floyd-Steinberg implementation thanks to Forrest Oliphant @forresto and @meemo via iFramework https://github.com/meemoo/iframework/blob/master/src/nodes/image-monochrome-worker.js
+ * floyd-steinberg
+ *
+ * Using 2D error diffusion formula published by Robert Floyd and Louis Steinberg in 1976
+ *
+ * Javascript implementation of Floyd-Steinberg algorithm thanks to Forrest Oliphant @forresto and @meemo 
+ * via iFramework https://github.com/meemoo/iframework/blob/master/src/nodes/image-monochrome-worker.js
+ *
+ * Accepts an object that complies with the HTML5 canvas imageData spec https://developer.mozilla.org/en-US/docs/Web/API/ImageData
+ * In particular, it makes use of the width, height, and data properties
+ *
+ * License: MIT
 */
+
 module.exports = floyd_steinberg;
 
 function floyd_steinberg(image) {
@@ -9,8 +20,9 @@ function floyd_steinberg(image) {
   var w = image.width;
   var lumR = [],
       lumG = [],
-      lumB = [],
-      error;
+      lumB = [];
+
+  var newPixel, err;
 
   for (var i = 0; i < 256; i++) {
     lumR[i] = i * 0.299;
@@ -23,9 +35,7 @@ function floyd_steinberg(image) {
     imageData[i] = Math.floor(lumR[imageData[i]] + lumG[imageData[i+1]] + lumB[imageData[i+2]]);
   }
 
-  var newPixel, err;
-
-  for (var currentPixel = 0; currentPixel <= imageDataLength; currentPixel+=4) {
+  for (var currentPixel = 0; currentPixel <= imageDataLength; currentPixel += 4) {
     // Floyd–Steinberg dithering algorithm
     newPixel = imageData[currentPixel] < 129 ? 0 : 255;
     err = Math.floor((imageData[currentPixel] - newPixel) / 16);

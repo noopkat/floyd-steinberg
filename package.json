@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/noopkat/floyd-steinberg/issues"
   },
-  "homepage": "https://github.com/noopkat/floyd-steinberg"
+  "homepage": "https://github.com/noopkat/floyd-steinberg",
+  "devDependencies": {
+    "tape": "~2.14.0"
+  }
 }
