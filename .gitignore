@@ -1,2 +1,4 @@
 node_modules
 test/not-real-test.js
+.DS_Store
+*/.DS_Store
