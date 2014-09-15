@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/noopkat/floyd-steinberg",
   "devDependencies": {
-    "tape": "~2.14.0"
+    "tape": "~2.14.0",
+    "pngparse": "~2.0.1"
   }
 }
