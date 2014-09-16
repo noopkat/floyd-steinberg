@@ -17,7 +17,7 @@ This module expects a PNG format image object to be passed in as a single argume
 
 example use:
 ```
-var floydSteinberg = require(floyd-steinberg);
+var floydSteinberg = require('floyd-steinberg');
 
 var ditherImage = floydSteinberg(imageData);
 console.log(ditherImage);
