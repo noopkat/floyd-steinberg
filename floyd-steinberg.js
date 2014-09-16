@@ -18,6 +18,7 @@ function floyd_steinberg(image) {
   var imageData = image.data;
   var imageDataLength = imageData.length;
   var w = image.width;
+  var h = image.height;
   var lumR = [],
       lumG = [],
       lumB = [];
@@ -27,7 +28,7 @@ function floyd_steinberg(image) {
   for (var i = 0; i < 256; i++) {
     lumR[i] = i * 0.299;
     lumG[i] = i * 0.587;
-    lumB[i] = i * 0.114;
+    lumB[i] = i * 0.110;
   }
 
   // Greyscale luminance (sets r pixels to luminance of rgb)
@@ -36,9 +37,9 @@ function floyd_steinberg(image) {
   }
 
   for (var currentPixel = 0; currentPixel <= imageDataLength; currentPixel += 4) {
-    // Floyd–Steinberg dithering algorithm
-    newPixel = imageData[currentPixel] < 129 ? 0 : 255;
-    err = Math.floor((imageData[currentPixel] - newPixel) / 16);
+    
+    newPixel = imageData[currentPixel] < 150 ? 0 : 255;
+    err = Math.floor((imageData[currentPixel] - newPixel) / 23);
     imageData[currentPixel] = newPixel;
     imageData[currentPixel + 4         ] += err * 7;
     imageData[currentPixel + 4 * w - 4 ] += err * 3;
@@ -47,6 +48,8 @@ function floyd_steinberg(image) {
     // Set g and b pixels equal to r
     imageData[currentPixel + 1] = imageData[currentPixel + 2] = imageData[currentPixel];
   }
+
+
 
   return image;
 }
