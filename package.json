@@ -1,6 +1,6 @@
 {
   "name": "floyd-steinberg",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Dithers an image using the Floyd-Steinberg algorithm",
   "main": "floyd-steinberg.js",
   "scripts": {
