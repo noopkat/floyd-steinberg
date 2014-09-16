@@ -18,7 +18,6 @@ function floyd_steinberg(image) {
   var imageData = image.data;
   var imageDataLength = imageData.length;
   var w = image.width;
-  var h = image.height;
   var lumR = [],
       lumG = [],
       lumB = [];
@@ -37,7 +36,7 @@ function floyd_steinberg(image) {
   }
 
   for (var currentPixel = 0; currentPixel <= imageDataLength; currentPixel += 4) {
-    
+    // threshold for determining current pixel's conversion to a black or white pixel
     newPixel = imageData[currentPixel] < 150 ? 0 : 255;
     err = Math.floor((imageData[currentPixel] - newPixel) / 23);
     imageData[currentPixel] = newPixel;
@@ -45,11 +44,9 @@ function floyd_steinberg(image) {
     imageData[currentPixel + 4 * w - 4 ] += err * 3;
     imageData[currentPixel + 4 * w     ] += err * 5;
     imageData[currentPixel + 4 * w + 4 ] += err * 1;
-    // Set g and b pixels equal to r
+    // Set g and b pixels equal to r (effectively greyscales the image fully)
     imageData[currentPixel + 1] = imageData[currentPixel + 2] = imageData[currentPixel];
   }
-
-
 
   return image;
 }
