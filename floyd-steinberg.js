@@ -3,7 +3,7 @@
  *
  * Using 2D error diffusion formula published by Robert Floyd and Louis Steinberg in 1976
  *
- * Javascript implementation of Floyd-Steinberg algorithm thanks to Forrest Oliphant @forresto and @meemo 
+ * Javascript implementation of Floyd-Steinberg algorithm thanks to Forrest Oliphant @forresto and @meemoo 
  * via iFramework https://github.com/meemoo/iframework/blob/master/src/nodes/image-monochrome-worker.js
  *
  * Accepts an object that complies with the HTML5 canvas imageData spec https://developer.mozilla.org/en-US/docs/Web/API/ImageData
