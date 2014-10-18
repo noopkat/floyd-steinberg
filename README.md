@@ -2,7 +2,7 @@
 
 #floyd-steinberg
 
-Dithering for the Node.js
+Greyscale dithering for the Node.js
 
 ##Install
 ```
