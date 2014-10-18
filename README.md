@@ -1,3 +1,5 @@
+!['npm version'](http://img.shields.io/npm/v/floyd-steinberg.svg?style=flat) !['github issues'](http://img.shields.io/github/issues/noopkat/floyd-steinberg.svg?style=flat) !['downloads over month'](http://img.shields.io/npm/dm/floyd-steinberg.svg?style=flat)
+
 #floyd-steinberg
 
 Dithering for the Node.js
