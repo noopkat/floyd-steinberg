@@ -36,7 +36,7 @@ ditherImage = {
 
 ```
 
-From there, you may pipe this into a PNG file output solution, or use the object to manipulate/use in your project.
+From there, you may pipe this into a PNG file output solution, or use the object to manipulate/use in your project. "What is all this piping business?" - I'm glad you asked. Read this [streams quick guide](http://www.sitepoint.com/basics-node-js-streams), and [in-depth streams adventure](https://github.com/substack/stream-handbook).
 
 ##How does it look?
 Current file output of this module:
