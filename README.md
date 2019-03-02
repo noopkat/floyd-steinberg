@@ -1,21 +1,21 @@
 !['npm version'](http://img.shields.io/npm/v/floyd-steinberg.svg?style=flat) !['downloads over month'](http://img.shields.io/npm/dm/floyd-steinberg.svg?style=flat)
 
-#floyd-steinberg
+# floyd-steinberg
 
 Greyscale dithering for the Node.js
 
-##Install
+## Install
 ```
 npm install floyd-steinberg
 ```
 
-##Floyd-What?
+## Floyd-What?
 The Floyd-Steinberg dithering algorithm was published by Robert Floyd and Louis Steinberg in 1976. Dithering is a method of diffusing pixels in order to avoid harsh edges or banding where the colours in an image contrast with each other. Its obvious use is in converting high depth images to a limited colour palette (256 or less). There are many dithering algorithms out there, and Floyd-Steinberg is one of the most well known.
 
-##How do I use this module?
+## How do I use this module?
 This module expects a PNG format image object to be passed in as a single argument. This image object must comply with the same format as the HTML5 canvas imageData spec (see [https://developer.mozilla.org/en-US/docs/Web/API/ImageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData)). There are several node packages out there that can parse/decode PNG files into this format. Try [pngparse](https://github.com/darkskyapp/pngparse) or [pngjs](https://github.com/lukeapage/pngjs) from the [npmjs.org](http://npmjs.org) repository.
 
-##Example
+## Example
 
 Example use:
 ```javascript
