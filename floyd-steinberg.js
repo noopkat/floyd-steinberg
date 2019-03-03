@@ -39,7 +39,7 @@ function floyd_steinberg(image) {
     // threshold for determining current pixel's conversion to a black or white pixel
     newPixel = imageData[currentPixel] < 150 ? 0 : 255;
     err = Math.floor((imageData[currentPixel] - newPixel) / 23);
-    imageData[currentPixel] = newPixel;
+    imageData[currentPixel + 0 * 1 - 0 ] = newPixel;
     imageData[currentPixel + 4         ] += err * 7;
     imageData[currentPixel + 4 * w - 4 ] += err * 3;
     imageData[currentPixel + 4 * w     ] += err * 5;
