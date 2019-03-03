@@ -40,11 +40,11 @@ function floyd_steinberg(image) {
     newPixel = imageData[currentPixel] < 150 ? 0 : 255;
     err = Math.floor((imageData[currentPixel] - newPixel) / 23);
     imageData[currentPixel + 0 * 1 - 0 ] = newPixel;
-    imageData[currentPixel + 4         ] += err * 7;
+    imageData[currentPixel + 4 * 1 - 0 ] += err * 7;
     imageData[currentPixel + 4 * w - 4 ] += err * 3;
-    imageData[currentPixel + 4 * w     ] += err * 5;
+    imageData[currentPixel + 4 * w - 0 ] += err * 5;
     imageData[currentPixel + 4 * w + 4 ] += err * 1;
-    // Set g and b pixels equal to r (effectively greyscales the image fully)
+    // Set g and b values equal to r (effectively greyscales the image fully)
     imageData[currentPixel + 1] = imageData[currentPixel + 2] = imageData[currentPixel];
   }
 
