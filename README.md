@@ -9,7 +9,7 @@ Greyscale dithering for the Node.js
 npm install floyd-steinberg
 ```
 
-## Floyd-What?
+## Floyd-Who?
 The Floyd-Steinberg dithering algorithm was published by Robert Floyd and Louis Steinberg in 1976. Dithering is a method of diffusing pixels in order to avoid harsh edges or banding where the colours in an image contrast with each other. Its obvious use is in converting high depth images to a limited colour palette (256 or less). There are many dithering algorithms out there, and Floyd-Steinberg is one of the most well known.
 
 ## How do I use this module?
