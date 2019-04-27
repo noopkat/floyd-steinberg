@@ -53,13 +53,13 @@ fs.createReadStream('in.png').pipe(new PNG()).on('parsed', function() {
 ##How does it look?
 Current file output of this module:
 
-![lena-floyd](https://raw.githubusercontent.com/noopkat/floyd-steinberg/master/test/png/test2-mono.png)
+![lena-floyd](test/png/test2-mono.png)
 
-![mandrill](https://raw.githubusercontent.com/noopkat/floyd-steinberg/master/test/png/test1-mono.png)
+![mandrill](test/png/test1-mono.png)
 
-![peppers](https://raw.githubusercontent.com/noopkat/floyd-steinberg/master/test/png/test0-mono.png)
+![peppers](test/png/test0-mono.png)
 
-![alligator](https://raw.githubusercontent.com/noopkat/floyd-steinberg/master/test/png/test3-mono.png)
+![alligator](test/png/test3-mono.png)
 
 ## Credit
 The base algorithm is a modified version from the [iFramework](https://github.com/meemoo/iframework/blob/master/src/nodes/image-monochrome-worker.js) project by [Forrest Oliphant](https://github.com/forresto) and [meemoo](https://github.com/meemoo).  
