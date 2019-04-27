@@ -59,6 +59,8 @@ Current file output of this module:
 
 ![peppers](https://raw.githubusercontent.com/noopkat/floyd-steinberg/master/test/png/test0-mono.png)
 
+![alligator](https://raw.githubusercontent.com/noopkat/floyd-steinberg/master/test/png/test3-mono.png)
+
 ## Credit
 The base algorithm is a modified version from the [iFramework](https://github.com/meemoo/iframework/blob/master/src/nodes/image-monochrome-worker.js) project by [Forrest Oliphant](https://github.com/forresto) and [meemoo](https://github.com/meemoo).  
 I then tweaked it further to remove artifacts and improve contrast in the image.
