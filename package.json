@@ -1,31 +1,20 @@
 {
-  "name": "floyd-steinberg",
+  "name": "floyd-steinberg-fork",
   "version": "1.0.6",
   "description": "Dithers an image using the Floyd-Steinberg algorithm",
   "main": "floyd-steinberg.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "ava dist/test/test.js",
+    "build": "tsc"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/noopkat/floyd-steinberg.git"
-  },
-  "keywords": [
-    "floyd-steinberg",
-    "dither",
-    "dithering",
-    "image",
-    "optimisation",
-    "optimization"
-  ],
-  "author": "Suz Hinton",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/noopkat/floyd-steinberg/issues"
-  },
-  "homepage": "https://github.com/noopkat/floyd-steinberg",
+  "type": "module",
+  "repository": "https://github.com/yourusername/floyd-steinberg-fork",
   "devDependencies": {
+    "@types/floyd-steinberg": "^1.0.3",
+    "@types/node": "^20.10.5",
+    "pngparse": "~2.0.1",
     "tape": "~2.14.0",
-    "pngparse": "~2.0.1"
+    "typescript": "^5.3.3",
+    "ava": "^6.0.1"
   }
 }

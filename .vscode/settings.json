@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "pngparse",
+        "Steinberg"
+    ],
+    "files.exclude": {
+        "node_modules": true,
+        "dist": true,
+        ".github":true,
+        ".gitignore":true
+      }
+}
